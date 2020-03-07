@@ -14,6 +14,12 @@ import * as CommonValues from '../utils/common-values';
 
 export class MTableHeader extends React.Component {
 
+  // by remy -->   为了方便本类的继承
+  constructor(props) {
+    super(props);
+  }
+  // <-- by remy
+
   renderHeader() {
     const size = this.props.options.padding === 'default' ? 'medium' : 'small';
 
